@@ -1,4 +1,5 @@
 from ggrocket import Rocket, Planet
+
 viewscale = input("Viewscale:")
 altitude = input("Altitude:")
 velocity = input("Velocity:")
