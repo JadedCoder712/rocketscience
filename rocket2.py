@@ -2,7 +2,7 @@ from ggrocket import Rocket, Planet
 from math import radians, sqrt
 from ggmath import Slider
 
-earth = Planet()
+earth = Planet(viewscale=0.00014)
 
 Re = 6.3761E6
 Me = 5.972E24
