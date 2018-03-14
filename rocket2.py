@@ -10,5 +10,5 @@ G = 6.674E-11
 Ve=sqrt(2*Me*G/Re)
 print("Predicted escape velocity is ", Ve, " m/s")
 
-rocket = Rocket(earth, heading=radians(90), directiond=90, velocity=10)
+rocket = Rocket(earth, heading=radians(90), directiond=90, velocity=Ve)
 earth.run(rocket)
