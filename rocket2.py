@@ -2,10 +2,10 @@ from ggrocket import Rocket, Planet
 from math import radians, sqrt
 from ggmath import Slider
 
-earth = Planet(viewscale=0.00014)
+earth = Planet(viewscale=0.00014, planetmass=7.342E22)
 
-Re = 6.3761E6
-Me = 5.972E24
+Re = 1.737E6
+Me = 7.342E22
 G = 6.674E-11
 
 Ve=sqrt(2*Me*G/Re)
