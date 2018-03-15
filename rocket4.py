@@ -6,11 +6,11 @@ from ggame import ImageAsset, Sprite
 class Space(Sprite):
     spacememe = ImageAsset(",mrgollub.jpg")
     def __init__(self, position):
-            super().__init__(Field.field, position)
+            super().__init__(Space.spacememe, position)
             self.vx=1
             self.vy=0
             self.vr=0
-            self.scale = 1.5
+            self.scale = 5
          
          
 earth = Planet(planetmass=0)  # no gravity to simplify things
