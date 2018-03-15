@@ -22,7 +22,7 @@ mp2 =  92670         # Propellent mass (kg)
 Ftotal2 = 8.01E5     # Total thrust (Newtons)
 tburn2 = 372         # Burn time (seconds)
 # PAYLOAD
-mep = 13150          # Payload mass (kg)
+mep = 8000          # Payload mass (kg)
 
 
 # Predict the final velocity using Tsiolkovsky's Rocket Equation,
