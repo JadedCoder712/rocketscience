@@ -3,7 +3,7 @@ from math import radians, sqrt, log
 from ggmath import InputButton, Timer
 from ggame import Color
 
-earth = Planet(planetmass=0, viewscale=0.000054)  # no gravity to simplify things
+earth = Planet(planetmass=0, viewscale=0.000054, color=0xF2FA04)  # no gravity to simplify things
 
 RocketStarted = False
 StartTime = None    # to keep track of when burn started
@@ -63,5 +63,5 @@ def GetMass():
 start = InputButton((10,400), "START", StartRocket, positioning="physical", size=15)
 
 #Create and "run" the rocket
-rocket = Rocket(earth, thrust=GetThrust, mass=GetMass)
+rocket = Rocket(earth, thrust=GetThrust, mass=GetMass, timezoom=)
 earth.run(rocket)
