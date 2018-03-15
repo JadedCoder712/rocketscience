@@ -1,18 +1,7 @@
 from ggrocket import Rocket, Planet
 from math import radians, sqrt, log
 from ggmath import InputButton, Timer, Label, Slider
-from ggame import ImageAsset, Sprite
 
-class Space(Sprite):
-    spacememe=ImageAsset(",mrgollub.jpg")
-    def __init__(self, position):
-            super().__init__(Space.spacememe, position)
-            self.vx=1
-            self.vy=0
-            self.vr=0
-            self.scale = 0.0001
-         
-         
 earth = Planet(planetmass=0)  # no gravity to simplify things
 
 Stage1Started = False
