@@ -77,6 +77,15 @@ def StartRocket():
         # Note the starting time
         StartTime = rocket.shiptime
         
+def Start2Stage():
+    global Stage2Started
+    global StartTime
+    if not (Stage2Started):
+        Stage2Started = True
+        Stage1Started = False
+        # Note the starting time
+        StartTime = rocket.shiptime
+
 # Function for calculating the total rocket mass, based on burn time and total
 # propellent mass.
 def GetMass():
@@ -113,7 +122,7 @@ def GetStatus():
 # Physical positioning at 10,400 pixels, calls the StartRocket function
 start = InputButton((10,400), "START", StartRocket, positioning="physical", size=15)
 
-stage2start = InputButton((10,450), "BEGIN STAGE 2", StartRocket, positioning="physical", size=15)
+stage2start = InputButton((10,450), "BEGIN STAGE 2", Start2Stage, positioning="physical", size=15)
 
 # Create a label for showing the current rocket status
 status = Label((10,420), GetStatus, positioning="physical", size=15)
