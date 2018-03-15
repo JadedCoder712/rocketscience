@@ -113,6 +113,8 @@ def GetStatus():
 # Physical positioning at 10,400 pixels, calls the StartRocket function
 start = InputButton((10,400), "START", StartRocket, positioning="physical", size=15)
 
+stage2start = InputButton((10,450), "BEGIN STAGE 2", StartRocket, positioning="physical", size=15)
+
 # Create a label for showing the current rocket status
 status = Label((10,420), GetStatus, positioning="physical", size=15)
 
